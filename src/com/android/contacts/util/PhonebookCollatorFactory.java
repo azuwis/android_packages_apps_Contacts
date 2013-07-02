@@ -38,6 +38,6 @@ public final class PhonebookCollatorFactory {
             locale = defaultLocale;
         }
 
-        return Collator.getInstance(locale);
+        return Collator.getInstance(Locale.CHINA);
     }
 }

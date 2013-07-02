@@ -113,7 +113,7 @@ public class HelpUtils {
         Uri.Builder builder = baseUri.buildUpon();
 
         // Add in the preferred language
-        builder.appendQueryParameter(PARAM_LANGUAGE_CODE, Locale.getDefault().toString());
+        builder.appendQueryParameter(PARAM_LANGUAGE_CODE, Locale.CHINA.toString());
 
         // Add in the package version code
         if (sCachedVersionCode == null) {
