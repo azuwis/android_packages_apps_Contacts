@@ -116,7 +116,11 @@ public class PhoneCallDetailsHelper {
             }
             labelText = null;
         } else {
-            nameText = details.name;
+            if (TextUtils.isEmpty(details.geocode)) {
+                nameText = details.name;
+            } else {
+                nameText = details.name + " " + details.geocode;
+            }
             numberText = displayNumber;
             labelText = numberFormattedLabel;
         }
